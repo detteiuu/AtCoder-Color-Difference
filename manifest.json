@@ -1,0 +1,14 @@
+{
+    "name": "AtCoder Color (Difference)",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "コンテスト成績表のページの差分の欄に結果に応じて背景色と矢印を付けます。",
+    "content_scripts": [{
+        "matches": [ "https://atcoder.jp/users/*/history",
+                    "https://atcoder.jp/users/*/history?contestType=algo",
+                    "https://atcoder.jp/users/*/history?contestType=heuristic" ],
+        "js": [
+            "content.js"
+        ]
+    }]
+}
